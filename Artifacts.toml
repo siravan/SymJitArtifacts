@@ -1,9 +1,9 @@
 [[symjit]]
 arch = "x86_64"
-git-tree-sha1 = "45d4e38c56be1a6727b4c9d4c06597e800dcbc67"
+git-tree-sha1 = "6717fc2c0c06404b6161757968ff894b89e13635"
 os = "linux"
 	[[symjit.download]]
-	sha256 = "8669cd38c8d6c89ec01a75bc2c74a24578cdeecf507c36e290a5cd8bb2ff728b"
+	sha256 = "b4f289196f505aec4e64c9c823e7e8065d12e360e77b4d3a6ef07dba44299918"
 	url = "https://github.com/siravan/SymJitArtifacts/raw/main/symjit_linux-64.tar.gz"
 
 [[symjit]]
