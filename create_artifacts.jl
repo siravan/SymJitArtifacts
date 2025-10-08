@@ -13,7 +13,7 @@ function single_artifact(io, arch, os, name)
 
     println(io, "\t[[symjit.download]]")
     println(io, "\tsha256 = \"$b\"")
-    println(io, "\turl = \"https://github.com/siravan/symjit/raw/v25/artifacts/$name\"")
+    println(io, "\turl = \"https://github.com/siravan/SymJitArtifacts/raw/main/$name\"")
     println(io)
 end
 

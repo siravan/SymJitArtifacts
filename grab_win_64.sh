@@ -10,7 +10,7 @@ do
     conda activate $platform
     conda install symjit -n $platform -c conda-forge --no-deps -y
     find ~/miniforge3/envs/$platform -name '_lib*' -exec mv {} . \;
-    tar -czf symjit_$platform.tar.gz _lib*
+    tar -czf symjit_$platform.tar.gz _lib* --mode=0666
     rm _lib*
     conda remove symjit -n $platform -y
     conda env remove -n $platform -y
