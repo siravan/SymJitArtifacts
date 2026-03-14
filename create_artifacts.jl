@@ -2,6 +2,8 @@
 
 using Tar, Inflate, SHA
 
+ver = "2.13.5"
+
 function single_artifact(io, arch, os, name)
     a = Tar.tree_hash(IOBuffer(inflate_gzip(name)))
     b = bytes2hex(open(sha256, name))
@@ -13,7 +15,7 @@ function single_artifact(io, arch, os, name)
 
     println(io, "\t[[symjit.download]]")
     println(io, "\tsha256 = \"$b\"")
-    println(io, "\turl = \"https://github.com/siravan/SymJitArtifacts/raw/main/$name\"")
+    println(io, "\turl = \"https://github.com/siravan/SymJitArtifacts/raw/main/$ver/$name\"")
     println(io)
 end
 
